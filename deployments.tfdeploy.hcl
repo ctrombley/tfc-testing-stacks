@@ -14,11 +14,5 @@ deployment "many" {
   inputs = {
     prefix    = "many"
     instances = 10
-    upstream_stack_id = upstream_input.upstream_stack.id
   }
-}
-
-upstream_input "upstream_stack" {
-  type = "stack"
-  source = "host-name/org-name/project-name/upstream-stack"
 }
