@@ -42,3 +42,21 @@ component "nulls" {
     null = provider.null.main
   }
 }
+
+output "name" {
+  type = string
+  value = component.pet.name
+}
+
+output "sensitive-name" {
+  type = string
+  sensitive = true
+  value = component.pet.name
+}
+
+output "ephemeral-sensitive-name" {
+  type = string
+  sensitive = true
+  ephemeral = true
+  value = component.pet.name
+}
