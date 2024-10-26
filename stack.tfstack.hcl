@@ -43,6 +43,11 @@ component "nulls" {
   }
 }
 
+output "static" {
+  type = string
+  value = "static"
+}
+
 output "name" {
   type = string
   value = component.pet.name
