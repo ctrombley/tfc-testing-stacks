@@ -54,9 +54,9 @@ output "sensitive-name" {
   value = component.pet.name
 }
 
-output "ephemeral-sensitive-name" {
-  type = string
-  sensitive = true
-  ephemeral = true
-  value = component.pet.name
-}
+# output "ephemeral-sensitive-name" {
+#   type = string
+#   sensitive = true
+#   ephemeral = true
+#   value = component.pet.name
+# }
