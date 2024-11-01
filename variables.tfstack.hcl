@@ -6,8 +6,7 @@ variable "instances" {
   type = number
 }
 
-variable "ephemeral_uuid" {
+variable "other_id" {
   type = string
-  ephemeral = true
-  sensitive = true
+  default = ""
 }
