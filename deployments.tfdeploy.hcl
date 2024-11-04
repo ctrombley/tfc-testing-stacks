@@ -6,6 +6,7 @@ deployment "single" {
   inputs = {
     prefix    = "single"
     instances = 2
+    other_id  = upstream_input.other.id
   }
 }
 
