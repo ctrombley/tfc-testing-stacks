@@ -24,5 +24,5 @@ publish_output "db_user" {
 
 upstream_input "other" {
   type = "stack"
-  source = "app.terraform.io/trombs-test-org/stacks/simple-copy"
+  source = "app.terraform.io/trombs-test-org/stacks/simple"
 }
