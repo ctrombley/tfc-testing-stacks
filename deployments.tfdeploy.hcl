@@ -6,7 +6,7 @@ deployment "single" {
   inputs = {
     prefix    = "single"
     instances = 2
-    other_id  = upstream_input.other.id
+    other_id  = upstream_input.pet_nulls.ids_from_simple
   }
 }
 
@@ -14,7 +14,7 @@ deployment "many" {
   inputs = {
     prefix    = "many"
     instances = 11
-    other_id  = upstream_input.other.id
+    other_id  = upstream_input.pet_nulls.ids_from_simple
   }
 }
 
@@ -22,7 +22,7 @@ publish_output "db_user" {
   value = deployment.single.username
 }
 
-upstream_input "other" {
+upstream_input "pet_nulls" {
   type = "stack"
-  source = "app.terraform.io/trombs-test-org/stacks/simple"
+  source = "app.terraform.io/trombs-test-org/stacks/pet-nulls-stack-parent"
 }
