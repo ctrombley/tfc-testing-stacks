@@ -8,5 +8,5 @@ variable "instances" {
 
 variable "other_id" {
   type = list(number)
-  default = ""
+  default = []
 }
