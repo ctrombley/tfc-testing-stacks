@@ -7,6 +7,6 @@ variable "instances" {
 }
 
 variable "other_id" {
-  type = string
+  type = list(number)
   default = ""
 }
