@@ -17,4 +17,5 @@ component "nulls" {
   providers = {
     null = provider.null.main
   }
+}
 
