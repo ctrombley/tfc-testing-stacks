@@ -24,5 +24,5 @@ publish_output "db_user" {
 
 upstream_input "pet_nulls" {
   type = "stack"
-  source = "app.terraform.io/trombs-test-org/stacks/pet-nulls-stack-parent"
+  source = "app.terraform.io/hashicorp/stacks/pet-nulls-stack-parent"
 }
