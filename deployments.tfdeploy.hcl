@@ -19,7 +19,7 @@ deployment "many" {
 }
 
 publish_output "db_user" {
-  value = deployment.single.username
+  value = "user"
 }
 
 upstream_input "pet_nulls" {
