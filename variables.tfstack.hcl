@@ -7,5 +7,5 @@ variable "instances" {
 }
 
 variable "other_id" {
-  type = number
+  type = string
 }
