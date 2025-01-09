@@ -14,7 +14,7 @@ deployment "many" {
   inputs = {
     prefix    = "many"
     instances = 11
-    other_id  = upstream_input.pet_nulls.ids_from_simple
+    other_id  = upstream_input.pet_nulls.picked_index_of_complex_deploy
   }
 }
 
