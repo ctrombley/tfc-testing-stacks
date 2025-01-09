@@ -6,7 +6,7 @@ deployment "single" {
   inputs = {
     prefix    = "single"
     instances = 2
-    other_id  = upstream_input.pet_nulls.ids_from_simple
+    other_id  = upstream_input.pet_nulls.picked_key_of_simple_deploy
   }
 }
 
